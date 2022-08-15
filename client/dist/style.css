@@ -1,3 +1,179 @@
+/* *,
+*: before,
+*: after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+} */
+
+
 body {
   font-family: sans-serif, arial;
+  margin: 0;
+  background-color: black;
+  overflow: hidden;
 }
+
+/* #completeSquare {
+  margin: auto;
+  min-height: 800px;
+  width: 500px;
+  background-color: rgb(221, 212, 212);
+} */
+
+/*
+Main divs
+*/
+
+#topBar {
+  display: block;
+  /* position: relative; */
+  height: 10vh;
+  width: 100%;
+  background-color: gray;
+  border-bottom: 5px solid black;
+}
+
+#notTopBar {
+  display: flex;
+}
+
+#sideBar {
+  display: inline-block;
+  height: 90vh;
+  width: 17%;
+  margin-right: 120px;
+  margin-bottom: 0;
+  padding-left: 10px;
+  background-color: green;
+}
+
+#functionalSquare {
+  display: inline-block;
+  height: 90vh;
+  width: 40%;
+  margin-bottom: 0;
+  background-color: blue;
+  overflow-y: auto;
+}
+
+#rightBar {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  height: 90vh;
+  width: 30%;
+  margin-bottom: 0;
+  background-color: pink;
+}
+
+/*
+Topbar stuff
+*/
+
+.logo {
+  position: relative;
+  left: 3%;
+  top: 10%;
+  font-size: 55px;
+  font-weight: bold;
+  color: blue;
+  font-family: 'Comic Sans MS';
+}
+
+/*
+Current search indicator on top of movie list
+*/
+
+.currentSearchIndicator {
+  background-color: pink;
+}
+
+/*
+Watch toggle buttons
+*/
+
+.watchButtons {
+  width: 100%;
+  /* height: 80px; */
+  background-color: red;
+}
+
+.watchButton {
+  width: 33.33%;
+  height: 50px;
+  font-size: 20px;
+}
+
+.watchButton:first-child,
+.watchButton:last-child {
+  border-left: 0;
+  border-right: 0;
+}
+
+
+.watchButton:hover {
+  cursor: pointer;
+}
+
+/*
+Each movie entry
+*/
+
+#movieList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.movieEntry {
+  display: block;
+  height: 100px;
+  width: 100%;
+  background-color: pink;
+  margin-bottom: 20px;
+}
+
+.movieEntry:first-child {
+  margin-top: 20px;
+}
+
+.movieTitle {
+  position: relative;
+  bottom: 15%;
+  font-size: 35px;
+}
+
+.entryWatchButton {
+  position: relative;
+  left: 80%;
+  bottom: 85%;
+  width: 120px;
+  height: 35px;
+}
+
+.entryDeleteButton{
+  position: relative;
+  left: 66.8%;
+  bottom: 40%;
+  width: 80px;
+  height: 25px;
+  background-color: blue;
+}
+
+.nothingness{
+  width: 80%;
+  height: 300px;
+  font-size: 60px;
+  margin: 30px auto;
+  background-color: pink;
+}
+
+/*
+Text in each movie entry
+*/
+
+
+/*
+Watch/to watch in topBar
+*/
